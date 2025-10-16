@@ -1,0 +1,23 @@
+@base <https://github.com/Barandelaa/websem/david.ttl> .
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://ex.org/movie#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+
+<#yo> rdf:type foaf:Person;
+	foaf:name "David Fernández Prieto";
+	foaf:firstName "David";
+	foaf:surname "Fernández-Prieto";
+	foaf:birthday "16-08";
+	foaf:age 21;
+	foaf:gender "masculino"@es;
+	foaf:homepage <https://github.com/deibis4211/>;
+	foaf:based_near <https://sws.geonames.org/6359872/>;
+    foaf:knows <https://github.com/usbt0p/websem/blob/main/lucas.ttl#yo>,  <https://github.com/usbt0p/websem/blob/main/tomas.ttl#yo>, <https://github.com/Ventupentu/WebSemantica_01/blob/main/ventura.ttl>, <https://github.com/Barandelaa/Web_Semantica/blob/main/daniel.ttl>;  
+	foaf:interest wikidata:Q8749, wikidata:Q15935, wikidata:Q49740, wikidata: Q20734;
+	ex:likesMovie wikidata:Q24953 , wikidata:Q214801, wikidata:Q1151814 .
+	
+<> a foaf:Document ;
+	foaf:name "Perfil foaf de David Fernández Prieto"@es;
+	foaf:primaryTopic <#yo> .

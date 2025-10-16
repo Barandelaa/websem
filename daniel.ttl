@@ -1,0 +1,23 @@
+@base <https://github.com/Barandelaa/websem/daniel.ttl> .
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://ex.org/movie#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+
+<#yo> rdf:type foaf:Person;
+	foaf:name "Daniel Barandela Cachafeiro";
+	foaf:firstName "Daniel";
+	foaf:surname "Barandela-Cachafeiro";
+	foaf:birthday "06-15";
+	foaf:age 21;
+	foaf:gender "masculino"@es;
+	foaf:homepage <https://steamcommunity.com/profiles/76561199189678088/>;
+	foaf:based_near <https://sws.geonames.org/6359872/>;
+    foaf:knows <https://github.com/usbt0p/websem/blob/main/lucas.ttl#yo>,  <https://github.com/usbt0p/websem/blob/main/tomas.ttl#yo>, <https://github.com/Ventupentu/WebSemantica_01/blob/main/ventura.ttl>;  
+	foaf:interest wikidata:Q65059474 , wikidata:Q8749, wikidata:Q2991667, wikidata: Q7252;
+	ex:likesMovie wikidata:Q134468954 , wikidata:Q23925035, wikidata:Q23013169 .
+	
+<> a foaf:Document ;
+	foaf:name "Perfil foaf de Daniel Barandela Cachafeiro"@es;
+	foaf:primaryTopic <#yo> .
